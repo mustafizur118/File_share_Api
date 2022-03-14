@@ -1,4 +1,3 @@
-//Code reffered from https://medium.com/@sophiesophie/node-js-tutorials-building-a-file-uploader-with-node-js-2808cac30a31
 $("#upload-btn").on("click", function () {
   $("#upload-input").click();
   $(".progress-bar").text("0%");

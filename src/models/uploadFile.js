@@ -31,7 +31,7 @@ uploadFileSchema.statics.findDownloadFile = async function (shortCode) {
   return await this.findOne({ urlShortCode: shortCode });
 };
 
-//Used keep the Candian timezone, mongoose uses a different timezone when saving data
+//Used keep the Bangladeshi timezone, mongoose uses a different timezone when saving data
 uploadFileSchema.plugin(timeZone, { paths: ["date", "subDocument.subDate"] });
 
 //Create and instantiate model with schema

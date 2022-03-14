@@ -10,7 +10,7 @@ var moment = require("moment");
 //POST method
 router.post("/", async (req, res) => {
   console.log(req);
-  let canadaTime = moment().tz("America/Toronto");
+  let canadaTime = moment().tz("Bangladesh/India");
   var form = new formidable.IncomingForm();
   form.uploadDir = path.join(__dirname, "../../public/files");
   form.parse(req, function (err, fields, files) {

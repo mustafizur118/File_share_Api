@@ -66,8 +66,8 @@ const job = new CronJob("0 */1 * * * *", function () {
     //Loops through each element and deletes them if expired
     filesFound.forEach((element) => {
       if (
-        moment.tz(element.urlExpiry, "America/Toronto").format() <
-        moment().tz("America/Toronto").format()
+        moment.tz(element.urlExpiry, "Bangladesh/India").format() <
+        moment().tz("Bangladesh/India").format()
       ) {
         let id = element.id;
         let fileName = element.fileName;
